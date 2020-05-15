@@ -1,6 +1,6 @@
 {
     "name": "Wise Online Attendance - Chrome Extension",
-    "version": "0.1",
+    "version": "0.0.1",
     "description": "Chrome browser extension for Wise Online Attendance.",
     "permissions": ["activeTab", "tabs"],
     "background": {
