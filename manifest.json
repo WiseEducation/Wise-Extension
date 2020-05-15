@@ -1,0 +1,34 @@
+{
+    "name": "Wise Online Attendance - Chrome Extension",
+    "version": "0.1",
+    "description": "Chrome browser extension for Wise Online Attendance.",
+    "permissions": ["activeTab", "tabs"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.wiseattend.com/*",
+                "https://*.wiseattend.com/*"
+            ],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "page_action": {
+        "default_icon": {
+            "16": "images/logo.png",
+            "32": "images/logo.png",
+            "48": "images/logo.png",
+            "128": "images/logo.png"  
+        }
+    },
+    "icons": {
+        "16": "images/logo.png",
+        "32": "images/logo.png",
+        "48": "images/logo.png",
+        "128": "images/logo.png"  
+    },
+    "manifest_version": 2
+}
